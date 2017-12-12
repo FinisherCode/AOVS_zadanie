@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="aspectjtools">
-    <CLASSES>
-      <root url="jar://C:/aspectj1.8/lib/aspectjtools.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
