@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AjcSettings">
+    <option name="ajcPath" value="C:/aspectj1.8/lib/aspectjtools.jar" />
+  </component>
   <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="ajc" />
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/src/generated" includeSubdirectories="true" />
     </excludeFromCompile>
+    <bytecodeTargetLevel>
+      <module name="CodeGenerationTool" target="" />
+    </bytecodeTargetLevel>
   </component>
 </project>

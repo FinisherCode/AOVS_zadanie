@@ -1,4 +1,4 @@
-package code_generator.data_structure;
+package code_generator.data_structure.supportive;
 
 public class GeneralizationPair {
 
