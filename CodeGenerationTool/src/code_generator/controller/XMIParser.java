@@ -42,11 +42,11 @@ public class XMIParser {
     }
 
     public void parseStuff() throws Exception {
-
         String content = readFile();
         content = content.replace("\t", "");
         Document document = loadXMLFromString(content);
         actualModel = new Model();
+        pairs = new ArrayList<>();
         processNode(document.getDocumentElement(), true);
         processNode(document.getDocumentElement(), false);
         System.out.println(actualModel);
@@ -78,7 +78,7 @@ public class XMIParser {
     List<GeneralizationPair> pairs = null;
 
     private void searchForGeneralizationPairs(Node node) {
-        pairs = new ArrayList<>();
+
         for (int i = 0; i < node.getChildNodes().getLength(); i++) {
             if ("ModelElement.taggedValue".equals(node.getChildNodes().item(i).getLocalName())) {
                 String source = null;

@@ -7,8 +7,6 @@ public class Method {
 
     private int type;
 
-    private String generatedCode;
-
     private List<Parameter> parameters;
 
     private String returnType;
@@ -31,14 +29,6 @@ public class Method {
 
     public void setType(int type) {
         this.type = type;
-    }
-
-    public String getGeneratedCode() {
-        return generatedCode;
-    }
-
-    public void setGeneratedCode(String generatedCode) {
-        this.generatedCode = generatedCode;
     }
 
     public List<Parameter> getParameters() {
